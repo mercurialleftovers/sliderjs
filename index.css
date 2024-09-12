@@ -1,0 +1,43 @@
+* {
+    padding   : 0;
+    margin    : 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border  : 1px solid black;
+    height  : 250px;
+    position: relative;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    position: relative;
+    border  : 1px dotted blue;
+    height  : 80%;
+    width   : 400px;
+    background-color: blue;
+    display: flex;
+    transition: left .3s ease-in;
+    left: 0; /* so that the transition knows where to start */
+}
+
+.spotlight {
+    position   : relative;
+    align-items: center;
+    border     : 1px dotted red;
+    width      : 250px;
+    height     : 80%;
+    background-color: #333333;
+    overflow: hidden;
+}
+
+
+.controls {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+}
